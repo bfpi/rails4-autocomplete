@@ -253,6 +253,13 @@ You can pass a custom message for when there is not results found. For this the 
     autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
 	:"data-autocomplete-label" => "Sorry, nothing found."
 
+
+### set miminum number of characters  before a search is performed
+
+    autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
+  :"data-autocomplete-minlength" => 1
+
+
 ## Formtastic
 
 If you are using [Formtastic](http://github.com/justinfrench/formtastic), you automatically get the *autocompleted_input* helper on *semantic_form_for*:
