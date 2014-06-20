@@ -260,6 +260,12 @@ You can pass a custom message for when there is not results found. For this the 
   :"data-autocomplete-minlength" => 1
 
 
+### button to open list of selection. the button will be displayed if the attribute is present. the value of the attribute is used as link-title
+
+    autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
+  :"data-autocomplete-dropdown" => "Show Items"
+
+
 ## Formtastic
 
 If you are using [Formtastic](http://github.com/justinfrench/formtastic), you automatically get the *autocompleted_input* helper on *semantic_form_for*:

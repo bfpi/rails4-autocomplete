@@ -1,5 +1,6 @@
 # Changelog
 
+* 1.0.10 button to open list of selection
 * 1.0.9 Option Added to set the minimum number of characters before a search is performed
 * 1.0.8 Added the option to use a custom message when no results are found
 * 1.0.7
