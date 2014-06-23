@@ -18,14 +18,13 @@ module Rails4Autocomplete
         limit   = get_autocomplete_limit(options)
         order   = get_autocomplete_order(method, options, model)
 
-
         items = model.all
 
         scopes.each { |scope| items = items.send(scope) } unless scopes.empty?
 
         items = items.select(get_autocomplete_select_clause(model, method, options)) unless options[:full_model]
-        items = items.where(get_autocomplete_where_clause(model, term, method, options)).
-            limit(limit).order(order)
+        items = items.where(get_autocomplete_where_clause(model, term, method, options)) unless term.blank?
+        items = items.limit(limit).order(order)
         items = items.where(where) unless where.blank?
 
         items
