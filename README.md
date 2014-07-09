@@ -254,13 +254,17 @@ You can pass a custom message for when there is not results found. For this the 
 	:"data-autocomplete-label" => "Sorry, nothing found."
 
 
-### set miminum number of characters  before a search is performed
+### Set miminum number of characters before a search is performed
+
+You can configure the minimum length of typed input before the search starts. Therefor use the attribute named ```data-autocomplete-minlength```. For example:
 
     autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
   	:"data-autocomplete-minlength" => 1
 
 
-### button to open list of selection. the button will be displayed if the attribute is present. the value of the attribute is used as link-title
+### Use button to open list of selection
+
+To simulate behavior of a normal selectbox you can use a button for opening the list for selection. The button will be displayed if the attribute ```data-autocomplete-dropdown``` is present. The value of this attribute is used as link title. For example:
 
     autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
   	:"data-autocomplete-dropdown" => "Show Items"
