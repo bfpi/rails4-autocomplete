@@ -257,13 +257,13 @@ You can pass a custom message for when there is not results found. For this the 
 ### set miminum number of characters  before a search is performed
 
     autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
-  :"data-autocomplete-minlength" => 1
+  	:"data-autocomplete-minlength" => 1
 
 
 ### button to open list of selection. the button will be displayed if the attribute is present. the value of the attribute is used as link-title
 
     autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
-  :"data-autocomplete-dropdown" => "Show Items"
+  	:"data-autocomplete-dropdown" => "Show Items"
 
 
 ## Formtastic
